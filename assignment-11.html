@@ -1,0 +1,92 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASSIGNMENT-11</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: "Times New Roman", serif;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            padding: 10px 12px;
+            border-bottom: 2px solid green;
+        }
+
+        a {
+            display: block;
+            color: blue;
+            font-size: 17px;
+        }
+
+        h1 {
+            font-size: 34px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .top-search {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+
+        .top-search input {
+            width: 250px;
+            height: 23px;
+        }
+
+        .close-btn {
+            width: 22px;
+            height: 32px;
+            font-size: 18px;
+        }
+
+        .bottom-search {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 18px;
+        }
+
+        .bottom-search input {
+            width: 250px;
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="#main">Skip to main content</a>
+        <a href="#home">Home Help</a>
+
+        <h1>Accessible Page</h1>
+
+        <div class="top-search">
+            <input type="text" aria-label="Search">
+            <button class="close-btn">X</button>
+        </div>
+
+        <div class="bottom-search">
+            <label for="search">Search:</label>
+            <input type="text" id="search">
+        </div>
+
+    </div>
+
+</body>
+</html>
