@@ -1,0 +1,79 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASSIGNMENT-18</title>
+   <link rel="stylesheet" href="./ass18.css">
+<body> 
+
+  <header>
+    <h1>ABC College Admission 2026</h1>
+  </header>
+
+  <main>
+    <h1>Courses and Fees</h1>
+
+    <div class="table-section">
+      <div class="table-caption">Available Courses</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Seats</th>
+            <th>Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B.Tech CSE</td>
+            <td>120</td>
+            <td>&#8377;90,000</td>
+          </tr>
+          <tr>
+            <td>BCA</td>
+            <td>60</td>
+            <td>&#8377;45,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <form action="./submit.html" method="get">
+      <fieldset>
+        <legend>Application Form</legend>
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" minlength="4" maxlength="25" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="course">Course:</label>
+          <select id="course" name="course">
+            <option value="B.Tech CSE" selected>B.Tech CSE</option>
+            <option value="BCA">BCA</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="statement">Statement:</label>
+          <textarea id="statement" name="statement"></textarea>
+        </div>
+
+        <button type="submit">Apply</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2026 ABC College
+  </footer>
+
+</body>
+</html>
